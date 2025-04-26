@@ -160,7 +160,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .main-logo {
-    max-width: 200px;
+    max-width: 270px;
     height: auto;
     animation: pulseAnimation 2s infinite ease-in-out;
     margin-bottom: 15px;
