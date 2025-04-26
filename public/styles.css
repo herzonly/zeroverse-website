@@ -69,7 +69,6 @@ header {
     border: 2px solid var(--accent-red);
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
-
 .logo-container h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -145,7 +144,7 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1;
 }
 
-.main-logo-container {
+main-logo-container {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 10px;
@@ -156,7 +155,6 @@ nav ul li a:hover, nav ul li a.active {
     height: auto;
     animation: pulseAnimation 2s infinite ease-in-out;
 }
-
 @keyframes pulseAnimation {
     0% {
         transform: scale(1);
