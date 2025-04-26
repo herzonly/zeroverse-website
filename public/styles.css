@@ -145,6 +145,31 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1;
 }
 
+.main-logo-container {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.main-logo {
+    max-width: 150px;
+    height: auto;
+    animation: pulseAnimation 2s infinite ease-in-out;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .server-title {
     margin-bottom: 40px;
     animation: fadeInUp 1s ease;
