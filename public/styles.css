@@ -113,11 +113,13 @@ nav ul li a:hover, nav ul li a.active {
 .hero {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(20, 20, 20, 0.9));
     overflow: hidden;
+    padding: 20px 10px;
 }
 
 .hero:before {
@@ -144,25 +146,24 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1;
 }
 
-main-logo-container {
+.main-logo-container {
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 10px;
-    display: block;
+    margin-bottom: 30px;
     width: 100%;
     position: relative;
     z-index: 10;
-    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-        .main-logo {
+.main-logo {
     max-width: 150px;
     height: auto;
     animation: pulseAnimation 2s infinite ease-in-out;
-    display: block;
-    margin: 0 auto; 
-        }
-
+    margin-bottom: 15px;
+}
         @keyframes pulseAnimation {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
