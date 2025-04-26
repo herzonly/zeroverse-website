@@ -148,6 +148,7 @@ main-logo-container {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 10px;
+    z-index: 100;
 }
 
 .main-logo {
