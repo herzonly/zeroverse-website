@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   initParticles();
   fetchServerStatus();
+  
+  const updateInterval = setInterval(fetchServerStatus, 2000);
 
   const refreshButton = document.getElementById('refresh-players');
   if (refreshButton) {
@@ -212,7 +214,7 @@ function updateServerInfo(data) {
                   const playerType = isBedrock ? 'bedrock' : 'java';
                   const displayName = playerName;
 
-                  const avatarUrl = `/api/avatar/${encodeURIComponent(playerName)}`;
+                  const avatarUrl = `https://mc-heads.net/avatar/${encodeURIComponent(playerName)}/100`;
 
                   const playerCard = document.createElement('div');
                   playerCard.className = `player-card ${playerType}`;
