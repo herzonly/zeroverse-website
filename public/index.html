@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroVerse HARDCORE - Minecraft Server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="/zeroverse.jpg" alt="ZeroVerse Logo" class="server-logo">
+            <h1>ZeroVerse HARDCORE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#features"><i class="fas fa-list-alt"></i> Features</a></li>
+                <li><a href="#players"><i class="fas fa-users"></i> Players</a></li>
+                <li><a href="#connect"><i class="fas fa-plug"></i> Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="server-title">
+                    <h2><i class="fas fa-fire"></i> WELCOME TO ZeroVerse HARDCORE <i class="fas fa-fire"></i></h2>
+                </div>
+                <div class="server-status">
+                    <div class="status-card">
+                        <div class="status-header">
+                            <i class="fas fa-signal"></i> Server Status
+                        </div>
+                        <div class="status-body" id="server-status">
+                            <p><span class="status-label">Status:</span> <span id="online-status">Checking...</span></p>
+                            <p><span class="status-label">Players:</span> <span id="player-count">Loading...</span></p>
+                            <p><span class="status-label">Version:</span> <span>JAVA 1.21 / MCPE 1.21.51 - 1.21.70</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#connect" class="btn btn-primary">Play Now <i class="fas fa-chevron-right"></i></a>
+                    <a href="#features" class="btn btn-secondary">Server Features <i class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-title">
+                <h2><i class="fas fa-star"></i> FITUR DAN KEBEBASAN SERVER</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dice-d20"></i>
+                    </div>
+                    <h3>Survival</h3>
+                    <p>Tantang diri Anda dalam mode survival yang menantang di dunia Minecraft yang luas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>Roleplay</h3>
+                    <p>Jika sudah masuk server maka anda sudah melakukan roleplay dengan karakter unik Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Duduk</h3>
+                    <p>Bisa duduk dll (/sit) untuk beristirahat dan bersosialisasi dengan pemain lain.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Jual Beli</h3>
+                    <p>Jual beli item dll /shop dengan ekonomi server yang dinamis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Teleport & Home</h3>
+                    <p>Tpa/sethome dll untuk navigasi yang mudah dan cepat di dalam game.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>PVP Bebas</h3>
+                    <p>PVP terbuka untuk semua dengan keseimbangan dan aturan yang adil.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Clan System</h3>
+                    <p>Bikin clan dan bangun komunitas Anda sendiri dengan teman-teman.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Ban Timer</h3>
+                    <p>Jika mati ban 20 menit - aturan hardcore yang menantang.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect" class="connect">
+            <div class="section-title">
+                <h2><i class="fas fa-plug"></i> CONNECT TO SERVER</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="connect-grid">
+                <div class="connect-card">
+                    <div class="connect-icon java-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>JAVA EDITION</h3>
+                    <div class="connect-info">
+                        <p><span class="info-label"><i class="fas fa-server"></i> IP:</span> 
+                            <span class="ip-address" id="java-ip">zeroversehc.biz.id</span>
+                            <button class="copy-btn" onclick="copyToClipboard('zeroversehc.biz.id')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </p>
+                        <p><span class="info-label"><i class="fas fa-network-wired"></i> PORT:</span> 19133</p>
+                        <p><span class="info-label"><i class="fas fa-code-branch"></i> VERSION:</span> 1.21</p>
+                        <a href="https://github.com/PojavLauncherTeam/PojavLauncher/releases/download/gladiolus/PojavLauncher.apk" class="download-btn">
+                            <i class="fas fa-download"></i> DOWNLOAD POJAV
+                        </a>
+                    </div>
+                </div>
+                <div class="connect-card">
+                    <div class="connect-icon bedrock-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>BEDROCK EDITION</h3>
+                    <div class="connect-info">
+                        <p><span class="info-label"><i class="fas fa-server"></i> IP:</span> 
+                            <span class="ip-address" id="bedrock-ip">zeroversehc.biz.id</span>
+                            <button class="copy-btn" onclick="copyToClipboard('zeroversehc.biz.id')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </p>
+                        <p><span class="info-label"><i class="fas fa-network-wired"></i> PORT:</span> 19133</p>
+                        <p><span class="info-label"><i class="fas fa-code-branch"></i> VERSION:</span> 1.21.51 - 1.21.70</p>
+                        <a href="https://www.mediafire.com/file/ba3ydxj12sz3bm8/MCPE-Patched-YSS-1.21.60.apk/file" class="download-btn">
+                            <i class="fas fa-download"></i> DOWNLOAD MCPE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="players" class="players">
+            <div class="section-title">
+                <h2><i class="fas fa-users"></i> ONLINE PLAYERS</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="player-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Players Online</h3>
+                        <div class="stat-count" id="online-count">Loading...</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Maximum Players</h3>
+                        <div class="stat-count" id="max-count">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-list-container">
+                <div class="player-list-header">
+                    <h3><i class="fas fa-list"></i> Player List</h3>
+                    <div class="refresh-btn" id="refresh-players">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </div>
+                </div>
+                <div class="player-grid" id="player-grid">
+                    <div class="loading-players">
+                        <div class="spinner"></div>
+                        <p>Loading players...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+                        <footer>
+                            <div class="footer-content">
+                                <div class="footer-logo">
+                                    <img src="/zeroverse.jpg" alt="ZeroVerse Logo" class="footer-logo-img">
+                                    <div class="footer-title">
+                                        <h3>ZeroVerse HARDCORE</h3>
+                                        <p>Java & Bedrock Crossplay Server</p>
+                                    </div>
+                                </div>
+                                <div class="footer-links">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#features">Features</a></li>
+                                        <li><a href="#players">Players</a></li>
+                                        <li><a href="#connect">Connect</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social">
+                                    <h4>Connect With Us</h4>
+                                    <div class="social-icons">
+                                        <a href="https://chat.whatsapp.com/HPixB0GXMqbFkPpWQnGbJM" class="social-icon"><i class="fas fa-comments"></i></a>
+                                        <a href="https://wa.me/6282196977538" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://whatsapp.com/channel/0029Vb5poUwCcW4ingM0SM3v" class="social-icon"><i class="fa-solid fa-bullhorn"></i></a>
+                                        <a href="https://github.com/herzonly" class="social-icon"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <p>&copy; 2025 ZeroVerse HARDCORE. All Rights Reserved.</p>
+                            </div>
+                        </footer>
+
+    <div class="notification" id="notification">
+        <p id="notification-message"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
