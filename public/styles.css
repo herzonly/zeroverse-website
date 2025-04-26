@@ -145,20 +145,21 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .main-logo-container {
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 10px;
-            display: block;
-            width: 100%;
-            position: relative;
-            z-index: 10;
-        }
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
 
         .main-logo {
-            max-width: 150px;
-            height: auto;
-            animation: pulseAnimation 2s infinite ease-in-out;
-            display: inline-block;
+    max-width: 150px;
+    height: auto;
+    animation: pulseAnimation 2s infinite ease-in-out;
+    display: block;
+    margin: 0 auto; 
         }
 
         @keyframes pulseAnimation {
@@ -202,6 +203,8 @@ nav ul li a:hover, nav ul li a.active {
     max-width: 400px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
+    margin: 0 auto;
+    clear: both; 
 }
 
 .status-card:hover {
