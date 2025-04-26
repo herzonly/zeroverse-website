@@ -144,14 +144,15 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1;
 }
 
-.main-logo-container {
+main-logo-container {
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
     width: 100%;
     position: relative;
     z-index: 10;
+    clear: both;
 }
 
         .main-logo {
