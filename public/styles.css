@@ -668,6 +668,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .player-card:hover {
@@ -677,8 +678,8 @@ section {
 }
 
 .player-avatar {
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     border-radius: 8px;
     margin: 0 auto 8px;
     background-color: #333;
