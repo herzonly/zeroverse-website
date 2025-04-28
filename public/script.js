@@ -165,7 +165,7 @@ function initParticles() {
 }
 
 function fetchServerStatus() {
-  const apiUrl = 'https://api.mcstatus.io/v2/status/java/play.mineluxmc.com:25565';
+  const apiUrl = 'https://api.mcstatus.io/v2/status/java/zeroversehc.biz.id:19133';
 
   fetch(apiUrl)
       .then(response => {
