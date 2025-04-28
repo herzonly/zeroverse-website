@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
       refreshButton.addEventListener('click', fetchServerStatus);
   }
 
+  const serverAddress = document.getElementById('server-address');
+  if (serverAddress) {
+      serverAddress.textContent = 'zeroversehc.biz.id:19133';
+  }
+
+  const copyButtons = document.querySelectorAll('.copy-ip');
+  copyButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          copyToClipboard('zeroversehc.biz.id:19133');
+      });
+  });
+
   const scrollLinks = document.querySelectorAll('nav a');
   scrollLinks.forEach(link => {
       link.addEventListener('click', function(e) {
@@ -16,11 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
           const targetId = this.getAttribute('href');
           const targetSection = document.querySelector(targetId);
-
-          window.scrollTo({
-              top: targetSection.offsetTop - 80,
-              behavior: 'smooth'
-          });
+          
+          if (targetSection) {
+              window.scrollTo({
+                  top: targetSection.offsetTop - 80,
+                  behavior: 'smooth'
+              });
+          }
 
           scrollLinks.forEach(link => link.classList.remove('active'));
           this.classList.add('active');
@@ -221,7 +235,7 @@ function updateServerInfo(data) {
 
                   playerCard.innerHTML = `
                       <div class="player-avatar">
-                          <img src="${avatarUrl}" alt="${displayName}" onerror="this.src='/assets/img/default-avatar.png'">
+                          <img src="${avatarUrl}" alt="${displayName}" onerror="this.src='assets/img/default-avatar.png'">
                       </div>
                       <div class="player-name">${displayName}</div>
                       <div class="player-type ${playerType}">${playerType.charAt(0).toUpperCase() + playerType.slice(1)}</div>
